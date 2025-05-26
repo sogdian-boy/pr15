@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">pr15_isomatov_h</string>
+    <string name="welcomText">С возвращением, Эмиль!</string>
+    <string name="felling">Как ты себя ощущаешь сегодня?</string>
+    <string name="zagolovok">Заголовок блока</string>
+    <string name="opisanie">Кратенькое описание\nблока с двумя строчками</string>
+    <string name="podr">подробнее</string>
+    <string name="relax">Спокойный</string>
+    <string name="rasslab">Расслабленный</string>
+    <string name="sosredot">Сосредоточенный</string>
+    <string name="volna">Взволнованный</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+</resources>

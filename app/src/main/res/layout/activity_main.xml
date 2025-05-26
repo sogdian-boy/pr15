@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_700"
+    tools:context=".Main">
+
+
+    <ImageView
+        android:id="@+id/imageViewsett"
+        android:layout_width="23dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/lines"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="61dp"
+        android:src="@drawable/logoand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="GoBack"/>
+
+    <ImageView
+        android:id="@+id/imageViewprof"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+android:onClick="exitAccount"
+        />
+
+    <TextView
+        android:id="@+id/welcome_back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/welcomText"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="43dp"
+        android:autoSizeMinTextSize="15sp"
+        android:text="@string/felling"
+        android:textColor="#B3FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_back_text" />
+
+    <LinearLayout
+        android:id="@+id/feel_rec_linear"
+        android:layout_width="459dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/calm"
+                android:layout_width="62dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/button_feel"
+                android:contentDescription="@string/relax"
+                android:src="@drawable/calm_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/relax"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calm" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/relax"
+                android:layout_width="62dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="18dp"
+                android:background="@drawable/button_feel"
+                android:contentDescription="@string/rasslab"
+                android:src="@drawable/relax_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="9dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/rasslab"
+                android:layout_marginHorizontal="26dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relax" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/focus"
+                android:layout_width="62dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="19dp"
+                android:background="@drawable/button_feel"
+                android:contentDescription="@string/sosredot"
+                android:src="@drawable/focus_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/sosredot"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/focus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/anxious"
+                android:layout_width="62dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="17dp"
+                android:background="@drawable/button_feel"
+                android:contentDescription="@string/volna"
+                android:src="@drawable/calm_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/volna"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anxious" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dop"
+                android:layout_width="62dp"
+                android:layout_height="65dp"
+                android:background="@drawable/button_feel"
+                />
+
+            <TextView
+                android:id="@+id/dop_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:text="что-то"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="359dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/button_feel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/zagolovok"
+        android:fontFamily="@font/alegreya_sc"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/opisanie"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <ImageView
+        android:layout_width="179dp"
+        android:layout_height="113dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/state_img_1"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/mini_button"
+        android:text="@string/podr"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <ImageView
+        android:id="@+id/meditation_but"
+        android:layout_width="359dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/button_feel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="266dp"
+        android:text="@string/opisanie"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <ImageView
+        android:layout_width="153dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/state_img_2"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/mini_button"
+        android:text="@string/podr"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="232dp"
+        android:text="@string/zagolovok"
+        android:fontFamily="@font/alegreya_sc"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/meditation_but"
+        app:layout_constraintTop_toBottomOf="@+id/feel_rec_linear" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green_700"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/button_icon"
+        app:itemRippleColor="@null"
+        app:labelVisibilityMode="unlabeled"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@drawable/bottom_nav_menu" >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
