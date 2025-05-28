@@ -17,7 +17,7 @@ class Main : AppCompatActivity() {
         finish()
     }
 
-    fun exitAccount(view: View) {
+    fun exitAccount(view: View){
         fun GoBack(view: View) {
             val intent = Intent(this@Main,Login::class.java)
             startActivity(intent)
